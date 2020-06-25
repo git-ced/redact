@@ -1,6 +1,7 @@
-export const sum = (a: number, b: number) => {
+export const sample = () => {
   if ('development' === process.env.NODE_ENV) {
-    console.log('boop');
+    console.log('sample');
   }
-  return a + b;
+
+  return 'sample';
 };
