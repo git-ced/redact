@@ -1,3 +1,4 @@
+import { isBlacklisted, blacklistCount } from './../src/index';
 import { english } from './../src/lists/profanity/english';
 import { redact } from '../src';
 
@@ -30,5 +31,25 @@ describe('Main Test', () => {
       grawlix: 'Nice'
     }))
       .toEqual('Nice yeah men');
+  });
+  it('English Profanity isBlacklisted', () => {
+    expect(isBlacklisted('Fuck yeah men', english))
+      .toEqual(true);
+  });
+  it('English Profanity isBlacklisted 2', () => {
+    expect(isBlacklisted('Good job men', english))
+      .toEqual(false);
+  });
+  it('English Profanity blacklistCount', () => {
+    expect(blacklistCount('Fuck yeah men', english))
+      .toEqual(1);
+  });
+  it('English Profanity blacklistCount 2', () => {
+    expect(blacklistCount('Fuck fuck FUCK yeah men', english))
+      .toEqual(3);
+  });
+  it('English Profanity blacklistCount 3', () => {
+    expect(blacklistCount('Good job men', english))
+      .toEqual(0);
   });
 });
