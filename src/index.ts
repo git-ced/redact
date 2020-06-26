@@ -67,3 +67,14 @@ export const redact = (
 export const isBlacklisted = (string: string, blacklist: string[]) => string
   .split(" ")
   .some((word) => blacklist.includes(word.toLowerCase()));
+
+/**
+ * Returns the count of blacklisted words in the sentence
+ *
+ * @param {string} string - Sentence to lookup.
+ * @param {Array<string>} blacklist Blacklisted words.
+ */
+export const blacklistCount = (string: string, blacklist: string[]) => string
+  .split(" ")
+  .filter((word) => blacklist.includes(word.toLowerCase()))
+  .length;
