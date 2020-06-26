@@ -42,10 +42,42 @@ const redact = require('@princedev/redact');
 
 ### ES6
 ```javascript
-import { sample } from '@princedev/redact';
+import { redact } from '@princedev/redact';
 ```
 
 ## Usage
+
+**Redact or censor a word from a sentence**
+```javascript
+import { redact } from '@princedev/redact';
+
+const englishProfanity = ['fuck', 'shit', ...];
+
+redact('Fuck yeah', englishProfanity,);
+// output: **** yeah
+
+redact('Fuck yeah', englishProfanity, {
+  grawlix: '$',
+  replaceByLength: false,
+});
+// output: $ yeah
+```
+
+**Can also be done in this way.**
+```javascript
+import redact from '@princedev/redact';
+
+const englishProfanity = ['fuck', 'shit', ...];
+
+redact.redact('Fuck yeah', englishProfanity);
+// output: **** yeah
+
+redact.redact('Fuck yeah', englishProfanity, {
+  grawlix: '$',
+  replaceByLength: false,
+});
+// output: $ yeah
+```
 
 Read the [docs](https://git-ced.github.io/redact-docs/) for more.
 
