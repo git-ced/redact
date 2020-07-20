@@ -3,15 +3,11 @@ export const filipino: string[] = [
   "amputa",
   "animal ka",
   // SECTION B
-  "bilat",
   "binibrocha",
   "bobo",
   "bubu",
   "b0b0",
-  "bogo",
-  "boto",
   "brocha",
-  "burat",
   "bwesit",
   "bwisit",
   "bwiset",
@@ -21,7 +17,6 @@ export const filipino: string[] = [
   "demonyo",
   // SECTION E
   "engot",
-  "etits",
   // SECTION F
   // SECTION G
   "gaga",
@@ -33,25 +28,16 @@ export const filipino: string[] = [
   "hayup",
   "hinampak",
   "hinayupak",
-  "hindot",
-  "hindutan",
   "hudas",
   // SECTION I
-  "iniyot",
   "inutel",
   "inutil",
-  "iyot",
   // SECTION J
   // SECTION K
   "kagaguhan",
   "kagang",
-  "kantot",
-  "kantotan",
-  "kantut",
-  "kantutan",
   "kaululan",
   "kayat",
-  "kiki",
   "kikinginamo",
   "kingina",
   "kupal",
@@ -62,7 +48,6 @@ export const filipino: string[] = [
   "lintik",
   // SECTION M
   // SECTION N
-  "nakakaburat",
   "nimal",
   // SECTION O
   "ogag",
@@ -72,18 +57,11 @@ export const filipino: string[] = [
   "pakshet",
   "pakyu",
   "pesteng yawa",
-  "poke",
-  "poki",
   "pokpok",
-  "poyet",
-  "pu'keng",
   "pucha",
   "puchanggala",
   "puchangina",
-  "puke",
-  "puki",
   "pukinangina",
-  "puking",
   "punyeta",
   "puta",
   "putang",
@@ -92,30 +70,21 @@ export const filipino: string[] = [
   "putanginamo",
   "putaragis",
   "putragis",
-  "puyet",
   // SECTION Q
   // SECTION R
-  "ratbu",
   // SECTION S
   "shunga",
   "sira ulo",
   "siraulo",
-  "suso",
-  "susu",
   // SECTION T
   "tae",
   "taena",
-  "tamod",
   "tanga",
   "tangina",
   "taragis",
   "tarantado",
-  "tete",
-  "teti",
   "timang",
   "tinil",
-  "tite",
-  "titi",
   "tungaw",
   // SECTION U
   "ulol",
