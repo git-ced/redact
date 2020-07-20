@@ -1,13 +1,17 @@
-import { isBlacklisted } from '../../src/index';
-import { english } from '../../src/lists/profanity/english';
+import { isBlacklisted, blacklist } from '../../src/index';
+
+import { english as englishProfanity } from './../../src/lists/profanity/english';
+import { english as englishSexual } from './../../src/lists/sexual/english';
+
+const blacklistedWords = blacklist(...englishProfanity, ...englishSexual);
 
 describe('Is Blacklisted', () => {
   it('English Profanity isBlacklisted', () => {
-    expect(isBlacklisted('Fuck yeah men', english))
+    expect(isBlacklisted('Fuck yeah men', blacklistedWords))
       .toEqual(true);
   });
   it('English Profanity isBlacklisted 2', () => {
-    expect(isBlacklisted('Good job men', english))
+    expect(isBlacklisted('Good job men', blacklistedWords))
       .toEqual(false);
   });
 });
