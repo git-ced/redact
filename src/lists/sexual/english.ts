@@ -35,7 +35,6 @@ export const english: string[] = [
   "cockhead",
   "cocks",
   "cocksucker",
-  "crap",
   "cum",
   "cunt",
   "cunts",
