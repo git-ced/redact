@@ -6,6 +6,8 @@ export const filipino: string[] = [
   "bilat",
   "binibrocha",
   "bobo",
+  "bubu",
+  "b0b0",
   "bogo",
   "boto",
   "brocha",
@@ -120,6 +122,8 @@ export const filipino: string[] = [
   "ulul",
   "ungas",
   // SECTION V
+  "vovo",
+  "vuvu",
   // SECTION W
   // SECTION X
   // SECTION Y

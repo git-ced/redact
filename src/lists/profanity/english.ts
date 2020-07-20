@@ -138,7 +138,6 @@ export const english: string[] = [
   "lezzian",
   "lipshits",
   "lipshitz",
-  "lesbian",
   // SECTION M
   "masochist",
   "masokist",
