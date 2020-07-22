@@ -2,6 +2,8 @@ const uniqueOnly = (arr: string[]) => (
   arr.filter((v, i, a) => a.indexOf(v) === i)
 )
 
+export { list } from './lists/index';
+
 /**
  * Returns a distinct values for all the blacklisted words given
  *

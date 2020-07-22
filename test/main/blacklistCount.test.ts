@@ -1,9 +1,6 @@
-import { blacklistCount, blacklist } from '../../src/index';
+import { blacklistCount, blacklist, list } from '../../src/index';
 
-import { english as englishProfanity } from './../../src/lists/profanity/english';
-import { english as englishSexual } from './../../src/lists/sexual/english';
-
-const blacklistedWords = blacklist(...englishProfanity, ...englishSexual);
+const blacklistedWords = blacklist(...list.english.profanity, ...list.english.sexual);
 
 describe('Blacklist Count', () => {
   it('English Profanity blacklistCount', () => {
